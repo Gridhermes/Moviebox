@@ -7,29 +7,46 @@
 :root {
   --bgmain: #be123c;
   --mainfont: "DM Sans", sans-serif;
+  --global-padding: 0px 98px;
 }
 
 body {
   font-family: var(--mainfont);
-  padding: 0 98px;
+  
+  position: absolute;
 }
 
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 17px 0;
+nav {
+  display: flex;
+  position: fixed;
+  min-width: 86vw;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 17px 98px;
+  backdrop-filter: blur(2px);
+  color: white;
 }
 
-a{
-    text-decoration: none;
-    /* color:white; */
+a {
+  text-decoration: none;
+  color:white;
+  
 }
 
-.logo, .menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+.logo,
+.menu,
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.home_section {
+  background-image: url(assets/DUNE-IMAGE.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
 }
